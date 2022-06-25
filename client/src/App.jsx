@@ -13,7 +13,7 @@ function App() {
     let imageData = new FormData();
     imageData.append('file', item.target.files[0], item.target.files[0].name);
     $('#loader').css('width', 20 + '%');
-    axios.post('https://taskawss3back.herokuapp.com/upload', imageData, {
+    axios.post('http://localhot:5000/upload', imageData, {
       headers: {
         'Content-Type': 'multipart/form-data',
         "enctype": "multipart/form-data"
@@ -38,13 +38,13 @@ function App() {
   });
 
   useEffect(() => {
-    axios.get('https://taskawss3back.herokuapp.com')
+    axios.get('http://localhost:5000')
       .then(res => {
         setFileList(res.data);
       });
     setInterval(() => {
       if (newItem) {
-        axios.get('https://taskawss3back.herokuapp.com')
+        axios.get('http://localhost:5000')
           .then(res => {
             setFileList([...fileList, ...res.data]);
           });
