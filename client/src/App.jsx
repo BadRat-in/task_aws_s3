@@ -1,4 +1,4 @@
-import './App.scss';
+import './App.css';
 import axios from 'axios';
 import FileCard from './Components/FileCard';
 import { useState } from 'react';
