@@ -1,0 +1,69 @@
+.card {
+  width: 10vw;
+  height: 10vw;
+  min-width: 6rem;
+  min-height: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.card:hover {
+  background-color: #cff;
+  border-radius: 0.5rem;
+}
+.card div {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  border: solid 1px rgb(196, 196, 196);
+  width: 100%;
+  height: 8rem;
+  min-height: 4.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card span {
+  border: solid 1px rgb(196, 196, 196);
+  border-top: none;
+  padding: 0.2em 0;
+  width: 100%;
+  font-size: 0.9em;
+  text-align: center;
+  font-weight: bold;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.card .delete-btn {
+  position: relative;
+  display: none;
+  top: -0.5rem;
+  right: -0.5rem;
+  font-size: 0.9em;
+  padding: 0.2em 0.5em;
+  font-weight: bold;
+  background-color: rgb(214, 214, 214);
+  border: none;
+}
+
+@media screen and (max-width: 820px) {
+  .card span {
+    font-size: 0.65em;
+  }
+}
+@media screen and (max-width: 1272px) and (min-width: 821px) {
+  .card span {
+    font-size: 0.7em;
+  }
+}/*# sourceMappingURL=filecard.css.map */
