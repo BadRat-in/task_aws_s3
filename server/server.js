@@ -23,7 +23,7 @@ app.use(BodyParser.json());
 app.use(BodyParser.urlencoded({ extended: true }));
 app.use(BodyParser.text());
 app.use(cors({
-    origin: 'https://taskawss3.herokuapp.com',
+    origin: 'http://localhost:3000',
     // origin: '*',
 }));
 
