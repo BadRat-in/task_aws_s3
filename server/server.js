@@ -6,7 +6,9 @@ const { S3Client, ListObjectsCommand, GetObjectCommand, PutObjectCommand, Delete
 const BodyParser = require('body-parser');
 const multer = require('multer');
 
-const REGION = process.env.AWS_BUCKET_REGION;
+//These veriables are defined in .env file
+//To access you aws s3 bucket goto .env file and put your details
+const REGION = process.env.AWS_BUCKET_REGION; 
 const BUCKET_NAME = process.env.AWS_BUCKET_NAME;
 const ACCESS_KEY_ID = process.env.AWS_ACCESS_KEY_ID;
 const SECRET_ACCESS_KEY = process.env.AWS_SECRET_ACCESS_KEY;
