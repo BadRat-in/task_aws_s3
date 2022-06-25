@@ -1,5 +1,5 @@
 import React from 'react';
-import "./filecard.scss";
+import "./filecard.css";
 import { useState, useEffect } from 'react';
 import Doc from '../Assets/Images/doc.jpeg';
 import Pdf from '../Assets/Images/pdf.png';
